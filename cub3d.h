@@ -6,7 +6,7 @@
 /*   By: mmanouze <mmanouze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 12:49:37 by mmanouze          #+#    #+#             */
-/*   Updated: 2022/12/24 17:48:38 by mmanouze         ###   ########.fr       */
+/*   Updated: 2022/12/26 12:44:13 by mmanouze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 #define PI 3.14159265359
 #define BUFFER_SIZE 10
 #define SCALE 0.2
-#define SPEED 20
+#define SPEED 50
 #define A_W_H 70
 #define W_WIDTH 1400
 #define W_HIGHT 1000
@@ -50,6 +50,11 @@ typedef struct var
     int         key_W_S;
     int         key_R_L;
     int         key_U_D;
+    int         line_img;
+    int         bits_img;
+    char        *addr_img;
+    int         *img_text;
+    int         endian_img;
 	int		    line_length;
 	int		    bits_per_pixel;
     char        hori_direction;

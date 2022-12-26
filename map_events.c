@@ -6,7 +6,7 @@
 /*   By: mmanouze <mmanouze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 11:17:39 by mmanouze          #+#    #+#             */
-/*   Updated: 2022/12/24 15:28:10 by mmanouze         ###   ########.fr       */
+/*   Updated: 2022/12/25 12:19:19 by mmanouze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int loop_event(t_var *var)
 {
-    mlx_destroy_image(var->mlx, var->img);
-    var->img = mlx_new_image(var->mlx, var->size_x, var->size_y);
-    var->addr = mlx_get_data_addr(var->img, &var->bits_per_pixel, &var->line_length,&var->endian);
+    // mlx_destroy_image(var->mlx, var->img);
+    // var->img = mlx_new_image(var->mlx, var->size_x, var->size_y);
+    // var->addr = mlx_get_data_addr(var->img, &var->bits_per_pixel, &var->line_length,&var->endian);
     key_manager(var);
     // draw_2d_map(var);
     player_view(var);
