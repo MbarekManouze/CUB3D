@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   rotation.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmanouze <mmanouze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/26 14:59:11 by mmanouze          #+#    #+#             */
-/*   Updated: 2023/01/06 18:30:56 by mmanouze         ###   ########.fr       */
+/*   Created: 2023/01/05 19:57:51 by mmanouze          #+#    #+#             */
+/*   Updated: 2023/01/06 18:21:44 by mmanouze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-int	main(void)
+void	ft_turn_right(t_var *var)
 {
-	t_var	*var;
+	var->pa += (10 * (M_PI / 180));
+	if (var->pa > 2 * M_PI)
+		var->pa = remainder(var->pa, M_PI * 2);
+}
 
-	var = (t_var *)malloc(sizeof(t_var));
-	save_map(var);
-	initiliaze(var);
-	get_cords(var);
-	mlx_hook(var->win, 2, 0, initiliaze_keys, var);
-	mlx_hook(var->win, 3, 0, reset_keys, var);
-	mlx_loop_hook(var->mlx, loop_event, var);
-	mlx_loop(var->mlx);
-	return (0);
+void	ft_turn_left(t_var *var)
+{
+	var->pa -= (10 * (M_PI / 180));
+	if (var->pa < 0)
+		var->pa += 2 * M_PI;
 }

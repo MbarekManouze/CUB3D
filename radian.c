@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   radian.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lelbakna <lelbakna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mmanouze <mmanouze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 11:06:51 by mmanouze          #+#    #+#             */
-/*   Updated: 2022/12/22 14:58:44 by lelbakna         ###   ########.fr       */
+/*   Updated: 2023/01/06 18:22:13 by mmanouze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-double degree_to_radian(int degree)
+double	degree_to_radian(int degree)
 {
-    return (degree * (M_PI / 180));
+	return (degree * (M_PI / 180));
 }
