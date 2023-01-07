@@ -6,7 +6,7 @@
 /*   By: mmanouze <mmanouze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 12:51:53 by mmanouze          #+#    #+#             */
-/*   Updated: 2023/01/07 15:07:14 by mmanouze         ###   ########.fr       */
+/*   Updated: 2023/01/07 15:17:13 by mmanouze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 
 // the equation ((double)(var->line_img_N / 4) / var->P_W_H) 
 // gives a little factor which we multiply by var->FIXED_POINT to get the 
+// Y coordinate of the picture pixel.
 
 void	north_wall(t_var *var)
 {
