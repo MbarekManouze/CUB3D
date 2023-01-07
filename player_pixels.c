@@ -6,7 +6,7 @@
 /*   By: mmanouze <mmanouze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 11:09:27 by mmanouze          #+#    #+#             */
-/*   Updated: 2023/01/06 19:31:43 by mmanouze         ###   ########.fr       */
+/*   Updated: 2023/01/07 15:02:49 by mmanouze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	far_wall(t_var *var, double fov, int i)
 	double	yc;
 	int		speed;
 
-	speed = 20;
+	speed = 30;
 	while (1)
 	{
 		var->Xhitwall += cos(fov) * speed;
@@ -61,7 +61,7 @@ void	far_wall(t_var *var, double fov, int i)
 			/ DIMENSION] == '1'
 			|| var->map[(int)(var->Yhitwall - yc - yf) / DIMENSION]
 			[(int)(var->Xhitwall + cos(fov) + (cos(fov) * speed)) \
-			/ DIMENSION] == '1'////////////
+			/ DIMENSION] == '1'
 			|| var->map[(int)(var->Yhitwall - yc + yf) / DIMENSION]
 			[(int)(var->Xhitwall + cos(fov) - (cos(fov) * speed)) \
 			/ DIMENSION] == '1'

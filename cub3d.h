@@ -6,7 +6,7 @@
 /*   By: mmanouze <mmanouze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 12:49:37 by mmanouze          #+#    #+#             */
-/*   Updated: 2023/01/06 19:33:34 by mmanouze         ###   ########.fr       */
+/*   Updated: 2023/01/07 11:37:11 by mmanouze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ typedef struct var
     int         bottom_pixel;
     int         x_text;
     int         index;
-    int         dist;
+    int         Fixed_point;
     int         y_text;
     int         pos;
     double      pa;
