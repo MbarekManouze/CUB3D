@@ -11,7 +11,8 @@ Explore the playful practical applications of mathematics in computer graphics.
 
 ## Getting Started
 
-Before diving into the project, it's recommended to familiarize yourself with the original Wolfenstein 3D game to understand its gameplay and visual style. You can play the game online here.
+Before diving into the project, it's recommended to familiarize yourself with the original Wolfenstein 3D game to understand its gameplay and visual style.
+You can play the game online [here](http://users.atw.hu/wolf3d/).
 
 
 
