@@ -13,6 +13,8 @@ Explore the playful practical applications of mathematics in computer graphics.
 
 Before diving into the project, it's recommended to familiarize yourself with the original Wolfenstein 3D game to understand its gameplay and visual style. You can play the game online here.
 
+
+
 # Mandatory Part - cub3D
 
 ## Description
